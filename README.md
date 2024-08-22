@@ -33,20 +33,6 @@ The project follows a modular architecture with the following key components:
 - **Database Migrations**: Automatically apply database migrations using Alembic.
 - **Dockerized Setup**: Easily deploy the application using Docker.
 
-## Project Structure
-
-├── alembic/ # Alembic migrations folder
-├── main.py # Application entry point
-├── models.py # SQLAlchemy models
-├── schemas.py # Pydantic models (schemas)
-├── crud.py # CRUD operations
-├── database.py # Database connection setup
-├── auth.py # Authentication utilities
-├── Dockerfile # Dockerfile for FastAPI app
-├── docker-compose.yml # Docker Compose configuration
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
-
 ## Running the Project
 
 ### Running with Docker
