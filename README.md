@@ -36,13 +36,13 @@ The project follows a modular architecture with the following key components:
 ## Project Structure
 
 ├── alembic/ # Alembic migrations folder
-│── main.py # Application entry point
-│── models.py # SQLAlchemy models
-│── schemas.py # Pydantic models (schemas)
-│── crud.py # CRUD operations
-│── database.py # Database connection setup
-│── auth.py # Authentication utilities
-│── Dockerfile # Dockerfile for FastAPI app
+├── main.py # Application entry point
+├── models.py # SQLAlchemy models
+├── schemas.py # Pydantic models (schemas)
+├── crud.py # CRUD operations
+├── database.py # Database connection setup
+├── auth.py # Authentication utilities
+├── Dockerfile # Dockerfile for FastAPI app
 ├── docker-compose.yml # Docker Compose configuration
 ├── requirements.txt # Python dependencies
 └── README.md # Project documentation
