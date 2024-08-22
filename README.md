@@ -28,7 +28,7 @@ The project follows a modular architecture with the following key components:
 ## Features
 
 - **User Registration and Authentication**: Securely register and authenticate users using JWT tokens.
-- **Product Management**: Create, read, update, and delete products. Supports soft deletion and cascading deletes.
+- **Product Management**: Create, read, update, and delete products. Supports cascading deletes.
 - **Order Management**: Users can create orders, and the system automatically updates product stock.
 - **Database Migrations**: Automatically apply database migrations using Alembic.
 - **Dockerized Setup**: Easily deploy the application using Docker.
