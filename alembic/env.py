@@ -1,4 +1,5 @@
-from models import Base
+import models
+import os
 from logging.config import fileConfig
 
 from sqlalchemy import engine_from_config
@@ -15,11 +16,13 @@ config = context.config
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
+config.set_main_option("sqlalchemy.url", os.getenv('DATABASE_URL'))
+
 # add your model's MetaData object here
 # for 'autogenerate' support
 # from myapp import mymodel
 # target_metadata = mymodel.Base.metadata
-target_metadata = Base.metadata
+target_metadata = models.Base.metadata
 
 # other values from the config, defined by the needs of env.py,
 # can be acquired:
